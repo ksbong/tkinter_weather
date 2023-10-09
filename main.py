@@ -53,7 +53,7 @@ def getWeather():
     try:
         slt_index = listbox.curselection()[0]
     except:
-        print("선택안함ㅡㅡ")
+        print("선택안함")
         
     city_name = city_dict_keys[slt_index]
     city = city_dict[city_name]
