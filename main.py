@@ -2,10 +2,7 @@ import requests
 import json
 import base64
 from urllib.request import urlopen
-
-
 from tkinter import *
-
 from cities import city_dict
 
 file_path = "./weather.json"
@@ -14,12 +11,9 @@ apiKey = "618414cd7a1e665025fb2cc40426aa75"
 lang = 'kr'
 units = 'metric'
 
-
-
 root = Tk()
 root.title("날?씨")
 root.geometry('330x200')
-
 
 frame = Frame(root)
 
@@ -32,7 +26,6 @@ photo = PhotoImage(data=image_b64)
 
 listbox = Listbox(root, height=10, selectmode="browse")
 city_dict_keys = list(city_dict.keys())
-
 
 keys = []
 
